@@ -1,12 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import App from './App'
+import * as serviceWorker from './serviceWorker'
+import { LoginApi } from './services/Api'
 
 ReactDOM.render(
   <React.Fragment>
-    <App />
+    <App title="Calliope" loginApi={new LoginApi()} />
   </React.Fragment>,
   document.getElementById('root')
 );
